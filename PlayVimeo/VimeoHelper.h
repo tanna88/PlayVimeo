@@ -15,13 +15,11 @@
 
 
 @interface VimeoHelper : NSObject {
-
     UIWebView *_webView;
+    UIWebView *_webViewPlay;
     id<VimeoDelegate> _delegate;
-    NSURLConnection *_connection;
     NSString *_originUrl;
 }
 
-@property (strong, nonatomic) UIWebView *webView;
 - (void)getVimeoRedirectUrlWithUrl:(NSString *)url delegate:(id<VimeoDelegate>)delegate;
 @end

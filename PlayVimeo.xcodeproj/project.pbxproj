@@ -21,6 +21,7 @@
 		130ACF5616B957DA004BCFD0 /* VimeoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 130ACF5516B957DA004BCFD0 /* VimeoHelper.m */; };
 		130ACF5916B95DCC004BCFD0 /* vimeo.js in Resources */ = {isa = PBXBuildFile; fileRef = 130ACF5716B95DB2004BCFD0 /* vimeo.js */; };
 		130ACF6016B968CA004BCFD0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130ACF5E16B968BC004BCFD0 /* MediaPlayer.framework */; };
+		13C04F0016B9935600E0BD57 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 13C04EFF16B9935600E0BD57 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		130ACF5516B957DA004BCFD0 /* VimeoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VimeoHelper.m; sourceTree = "<group>"; };
 		130ACF5716B95DB2004BCFD0 /* vimeo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vimeo.js; sourceTree = "<group>"; };
 		130ACF5E16B968BC004BCFD0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		13C04EFF16B9935600E0BD57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		130ACF2216B95787004BCFD0 = {
 			isa = PBXGroup;
 			children = (
+				13C04EFF16B9935600E0BD57 /* README.md */,
 				130ACF3716B95787004BCFD0 /* PlayVimeo */,
 				130ACF3016B95787004BCFD0 /* Frameworks */,
 				130ACF2E16B95787004BCFD0 /* Products */,
@@ -176,6 +179,7 @@
 				130ACF4616B95787004BCFD0 /* Default@2x.png in Resources */,
 				130ACF4816B95787004BCFD0 /* Default-568h@2x.png in Resources */,
 				130ACF4B16B95787004BCFD0 /* MainStoryboard.storyboard in Resources */,
+				13C04F0016B9935600E0BD57 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 				130ACF5316B95788004BCFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

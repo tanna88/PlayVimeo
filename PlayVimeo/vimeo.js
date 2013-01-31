@@ -10,4 +10,3 @@ var url = "http://player.vimeo.com/play_redirect" +
 "&time=" + time;
 
 window.vimeourl = url;
-window.location.href = url;
