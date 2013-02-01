@@ -1,15 +1,20 @@
 PlayVimeo
 =========
 
-Using VimeoHeler to generate direct vimeo url.
-'''INSTALL'''
+Using VimeoHelper to get vimeo url which can use to play in MPMoviePlayerViewController.
+INSTALL
 ----
 Copy VimeoHelper to your project
-#import 'vimeoHelper.h' to your ViewController
 
-'''HOW TO USE'''
-For IOS6
+</pre>
+#import 'vimeoHelper.h' to your ViewController
+</pre>
+
+HOW TO USE
 ----
+
+For IOS6
+
 <pre>
 <code>
 - (void)viewDidLoad
@@ -26,11 +31,13 @@ For IOS6
 }
 </code>
 </pre>
-----
+
+
 For IOS5
-----
+<pre>
 #define IOS_OLDER_THAN_6 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] < 6.0 )
 ...
+</pre>
 
 <pre>
 <code>
