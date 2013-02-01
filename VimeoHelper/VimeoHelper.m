@@ -31,11 +31,11 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     if(_webViewPlay == nil) {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"vimeo" ofType:@"js"];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"vimeo.js" ofType:@"txt"];
         NSString *jsCode = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
         [_webView stringByEvaluatingJavaScriptFromString:jsCode];
         
-        NSString *urlStr = [_webView stringByEvaluatingJavaScriptFromString:@"window.vimeourl"];
+        NSString *urlStr = [_webView stringByEvaluatingJavaScriptFromString:@"getUrl()"];
         if([urlStr isEqual:@""])
             return;
         _webViewPlay = [[UIWebView alloc] init];

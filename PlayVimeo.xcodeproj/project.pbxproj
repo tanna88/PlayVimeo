@@ -18,9 +18,9 @@
 		130ACF4816B95787004BCFD0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130ACF4716B95787004BCFD0 /* Default-568h@2x.png */; };
 		130ACF4B16B95787004BCFD0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130ACF4916B95787004BCFD0 /* MainStoryboard.storyboard */; };
 		130ACF4E16B95787004BCFD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130ACF4D16B95787004BCFD0 /* ViewController.m */; };
-		130ACF5616B957DA004BCFD0 /* VimeoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 130ACF5516B957DA004BCFD0 /* VimeoHelper.m */; };
-		130ACF5916B95DCC004BCFD0 /* vimeo.js in Resources */ = {isa = PBXBuildFile; fileRef = 130ACF5716B95DB2004BCFD0 /* vimeo.js */; };
 		130ACF6016B968CA004BCFD0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130ACF5E16B968BC004BCFD0 /* MediaPlayer.framework */; };
+		133751CD16BC2436000482E9 /* VimeoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 133751CB16BC2436000482E9 /* VimeoHelper.m */; };
+		133751CE16BC247B000482E9 /* vimeo.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 133751C916BC2436000482E9 /* vimeo.js.txt */; };
 		13C04F0016B9935600E0BD57 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 13C04EFF16B9935600E0BD57 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +41,10 @@
 		130ACF4A16B95787004BCFD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		130ACF4C16B95787004BCFD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		130ACF4D16B95787004BCFD0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		130ACF5416B957DA004BCFD0 /* VimeoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VimeoHelper.h; sourceTree = "<group>"; };
-		130ACF5516B957DA004BCFD0 /* VimeoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VimeoHelper.m; sourceTree = "<group>"; };
-		130ACF5716B95DB2004BCFD0 /* vimeo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vimeo.js; sourceTree = "<group>"; };
 		130ACF5E16B968BC004BCFD0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		133751C916BC2436000482E9 /* vimeo.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vimeo.js.txt; path = VimeoHelper/vimeo.js.txt; sourceTree = SOURCE_ROOT; };
+		133751CA16BC2436000482E9 /* VimeoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VimeoHelper.h; path = VimeoHelper/VimeoHelper.h; sourceTree = SOURCE_ROOT; };
+		133751CB16BC2436000482E9 /* VimeoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VimeoHelper.m; path = VimeoHelper/VimeoHelper.m; sourceTree = SOURCE_ROOT; };
 		13C04EFF16B9935600E0BD57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,15 +95,13 @@
 		130ACF3716B95787004BCFD0 /* PlayVimeo */ = {
 			isa = PBXGroup;
 			children = (
+				133751C816BC23EF000482E9 /* VimeoHelper */,
 				130ACF4016B95787004BCFD0 /* AppDelegate.h */,
 				130ACF4116B95787004BCFD0 /* AppDelegate.m */,
 				130ACF4916B95787004BCFD0 /* MainStoryboard.storyboard */,
 				130ACF4C16B95787004BCFD0 /* ViewController.h */,
 				130ACF4D16B95787004BCFD0 /* ViewController.m */,
 				130ACF3816B95787004BCFD0 /* Supporting Files */,
-				130ACF5416B957DA004BCFD0 /* VimeoHelper.h */,
-				130ACF5516B957DA004BCFD0 /* VimeoHelper.m */,
-				130ACF5716B95DB2004BCFD0 /* vimeo.js */,
 			);
 			path = PlayVimeo;
 			sourceTree = "<group>";
@@ -120,6 +118,16 @@
 				130ACF4716B95787004BCFD0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		133751C816BC23EF000482E9 /* VimeoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				133751C916BC2436000482E9 /* vimeo.js.txt */,
+				133751CA16BC2436000482E9 /* VimeoHelper.h */,
+				133751CB16BC2436000482E9 /* VimeoHelper.m */,
+			);
+			name = VimeoHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130ACF5916B95DCC004BCFD0 /* vimeo.js in Resources */,
+				133751CE16BC247B000482E9 /* vimeo.js.txt in Resources */,
 				130ACF3C16B95787004BCFD0 /* InfoPlist.strings in Resources */,
 				130ACF4416B95787004BCFD0 /* Default.png in Resources */,
 				130ACF4616B95787004BCFD0 /* Default@2x.png in Resources */,
@@ -193,7 +201,7 @@
 				130ACF3E16B95787004BCFD0 /* main.m in Sources */,
 				130ACF4216B95787004BCFD0 /* AppDelegate.m in Sources */,
 				130ACF4E16B95787004BCFD0 /* ViewController.m in Sources */,
-				130ACF5616B957DA004BCFD0 /* VimeoHelper.m in Sources */,
+				133751CD16BC2436000482E9 /* VimeoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +285,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlayVimeo/PlayVimeo-Prefix.pch";
 				INFOPLIST_FILE = "PlayVimeo/PlayVimeo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +297,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlayVimeo/PlayVimeo-Prefix.pch";
 				INFOPLIST_FILE = "PlayVimeo/PlayVimeo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

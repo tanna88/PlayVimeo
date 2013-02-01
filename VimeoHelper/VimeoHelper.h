@@ -21,5 +21,6 @@
     NSString *_originUrl;
 }
 
+@property (nonatomic, retain) UIWebView *webView;
 - (void)getVimeoRedirectUrlWithUrl:(NSString *)url delegate:(id<VimeoDelegate>)delegate;
 @end
