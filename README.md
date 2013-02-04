@@ -6,7 +6,7 @@ INSTALL
 ----
 Copy VimeoHelper to your project
 
-</pre>
+<pre>
 #import 'vimeoHelper.h' to your ViewController
 </pre>
 
@@ -35,8 +35,9 @@ For IOS6
 
 For IOS5
 <pre>
+<code>
 #define IOS_OLDER_THAN_6 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] < 6.0 )
-...
+</code>
 </pre>
 
 <pre>

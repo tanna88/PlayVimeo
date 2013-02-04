@@ -21,11 +21,6 @@ MPMoviePlayerViewController *_moviePlayerController;
 {
     [super viewDidLoad];
     vimeoHelper = [[VimeoHelper alloc] init];
-    [vimeoHelper getVimeoRedirectUrlWithUrl:@"http://vimeo.com/52760742" delegate:(id<VimeoDelegate>)self];
-    if IOS_OLDER_THAN_6 {
-        [self.view addSubview:vimeoHelper.webView];
-        vimeoHelper.webView.frame =  CGRectMake(0,0,0,0);
-    }
 }
 
 - (void)finishedGetVimeoURL:(NSString *)url
@@ -34,9 +29,28 @@ MPMoviePlayerViewController *_moviePlayerController;
     [self presentViewController:_moviePlayerController animated:NO completion:nil];
 }
 
+- (void)playVideo
+{
+    NSString * url = [self.txtUrl text];
+    [vimeoHelper getVimeoRedirectUrlWithUrl:url delegate:(id<VimeoDelegate>)self];
+    if IOS_OLDER_THAN_6 {
+        [self.view addSubview:vimeoHelper.webView];
+        vimeoHelper.webView.frame =  CGRectMake(0,0,0,0);
+    }
+
+}
+
+- (IBAction)playUrl:(id)sender {
+    [self playVideo];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
 
+- (void)viewDidUnload {
+    [self setTxtUrl:nil];
+    [super viewDidUnload];
+}
 @end
