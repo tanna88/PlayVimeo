@@ -60,7 +60,7 @@
 + (BOOL)isLiveURL:(NSString *)url {
     NSError  *error  = NULL;
     NSRegularExpression *regex = [NSRegularExpression
-                                  regularExpressionWithPattern:@"https?:\\/\\/av.vimeo.com.+" options:0 error:&error];
+                                  regularExpressionWithPattern:@"https?:\\/\\/((?:av.vimeo|pdl.vimeocdn).com).+" options:0 error:&error];
     
     NSTextCheckingResult *match = [regex firstMatchInString:url
                                                     options:0
